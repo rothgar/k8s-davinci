@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    kubernetes.io/metadata.name: nvidia
+    pod-security.kubernetes.io/enforce: privileged
+  name: nvidia
+spec:
+  finalizers:
+    - kubernetes
+status:
+  phase: Active
